@@ -1,0 +1,39 @@
+<launch>
+
+  <!-- Calibration -->
+
+  <!-- Odometry -->
+
+  <arg name="laser_enabled" default="true"/>
+  <arg name="kinect_enabled" default="true"/>
+  <arg name="robot_initial_pose" default="0 0 0"/>
+
+  <!-- URDF -->
+  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find victoria_description)/robots/victoria.xacro'
+    laser_enabled:=$(arg laser_enabled)
+    kinect_enabled:=$(arg kinect_enabled)
+    " />
+
+
+  <!-- Drivers for Base -->
+
+  <!-- Controllers -->
+
+  <!-- Joint State -> TF -->
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />  
+
+  <!-- R200 Camera -->
+  <include file="$(find realsense_camera)/launch/r200_nodelet_default.launch" />
+
+  <!-- Laser -->
+
+  <!-- Teleop -->
+
+  <!-- Android App -->
+  <include file="$(find victoria_perception)/launch/android_image_pub.launch" />
+
+  <!-- Software Runstop -->
+
+</launch>
