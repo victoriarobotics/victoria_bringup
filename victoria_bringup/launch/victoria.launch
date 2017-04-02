@@ -4,7 +4,7 @@
 
   <!-- Odometry -->
 
-  <arg name="laser_enabled" default="flase"/>
+  <arg name="laser_enabled" default="false"/>
   <arg name="kinect_enabled" default="true"/>
   <arg name="robot_initial_pose" default="0 0 0"/>
 
