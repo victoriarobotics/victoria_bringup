@@ -4,7 +4,7 @@
 
   <!-- Odometry -->
 
-  <arg name="laser_enabled" default="true"/>
+  <arg name="laser_enabled" default="flase"/>
   <arg name="kinect_enabled" default="true"/>
   <arg name="robot_initial_pose" default="0 0 0"/>
 
@@ -32,6 +32,9 @@
   <include file="$(find realsense_camera)/launch/r200_nodelet_default.launch" />
 
   <!-- Laser -->
+
+  <!-- Laser -->
+  <include file="$(find victoria_navigation)/launch/depth_to_laserscan.launch" />
 
   <!-- Teleop -->
 
