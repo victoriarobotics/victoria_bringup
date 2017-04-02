@@ -7,6 +7,7 @@ project(victoria_bringup)
 find_package(catkin REQUIRED COMPONENTS
   robot_state_publisher
   roscpp
+  roslaunch
   rospy
   sensor_msgs
 )
@@ -187,3 +188,6 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+## Test launch files.
+roslaunch_add_file_check(launch)

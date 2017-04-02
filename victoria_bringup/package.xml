@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<package>
+<package format="2">
   <name>victoria_bringup</name>
   <version>0.0.0</version>
   <description>The victoria_bringup package</description>
@@ -9,11 +9,10 @@
   <!-- <maintainer email="jane.doe@example.com">Jane Doe</maintainer> -->
   <maintainer email="jrcapriles@gmail.com">Jose Capriles</maintainer>
 
-
   <!-- One license tag required, multiple allowed, one license per tag -->
   <!-- Commonly used license strings: -->
   <!--   BSD, MIT, Boost Software License, GPLv2, GPLv3, LGPLv2.1, LGPLv3 -->
-  <license>TODO</license>
+  <license>MIT</license>
 
 
   <!-- Url tags are optional, but mutiple are allowed, one per tag -->
@@ -26,7 +25,7 @@
   <!-- Authors do not have to be maintianers, but could be -->
   <!-- Example: -->
   <!-- <author email="jane.doe@example.com">Jane Doe</author> -->
-
+  <author email="jrcapriles@gmail.com">Jose Capriles</author>
 
   <!-- The *_depend tags are used to specify dependencies -->
   <!-- Dependencies can be catkin packages or system dependencies -->
@@ -44,11 +43,16 @@
   <build_depend>roscpp</build_depend>
   <build_depend>rospy</build_depend>
   <build_depend>sensor_msgs</build_depend>
-  <run_depend>robot_state_publisher</run_depend>
-  <run_depend>roscpp</run_depend>
-  <run_depend>rospy</run_depend>
-  <run_depend>sensor_msgs</run_depend>
-
+  <build_depend>roslaunch</build_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>xacro</exec_depend>
+  <exec_depend>victoria_description</exec_depend>
+  <exec_depend>victoria_perception</exec_depend>
+  <exec_depend>victoria_base</exec_depend>
+  <exec_depend>realsense_camera</exec_depend>
 
   <!-- The export tag contains other, unspecified, tags -->
   <export>
