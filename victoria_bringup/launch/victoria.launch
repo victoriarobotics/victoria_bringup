@@ -22,11 +22,7 @@
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />  
 
   <!-- GPS -->
-  <!-- Parameters need to be configurable -->
-  <node name="gps_publisher" pkg="nmea_navsat_driver" type="nmea_serial_driver">
-      <param name="_port" value="/dev/ttyUSB0"/>
-      <param name="_baud" value="9600"/>
-  </node>
+  <node name="gps_publisher" pkg="gpsd_client" type="gpsd_client" respawn="true"/>
 
   <!-- R200 Camera -->
   <include file="$(find realsense_camera)/launch/r200_nodelet_default.launch" />
