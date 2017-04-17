@@ -15,7 +15,7 @@
 
 
   <!-- Base/Platform -->
-  <include file="$(find victoria_base)/launch/victoria_base.launch" />
+  <!--include file="$(find victoria_base)/launch/victoria_base.launch" /-->
   
   <!-- Joint State -> TF -->
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
