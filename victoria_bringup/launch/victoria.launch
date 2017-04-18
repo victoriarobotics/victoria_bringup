@@ -25,6 +25,7 @@
   <node name="gps_serial_reader" pkg="nmea_navsat_driver" type="nmea_topic_serial_reader" respawn="true">
       <param name="port" value="/dev/ttyUSB0"/>
       <param name="baud" value="9600"/>
+      <param name="frame_id" value="gps"/>
   </node>
   <node name="gps_publisher" pkg="nmea_navsat_driver" type="nmea_topic_driver" respawn="true"/>
 
