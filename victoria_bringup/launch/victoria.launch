@@ -44,7 +44,7 @@
   </node>
 
   <!-- Laser Filters (Only hokuyo for now)-->
-  <include file="$(depth_laser_filter)/launch/hokuyo_filtered.launch" />
+  <include file="$(find depth_laser_filter)/launch/hokuyo_filtered.launch" />
 
   <!-- Teleop -->
 
