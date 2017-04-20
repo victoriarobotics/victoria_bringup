@@ -43,7 +43,7 @@
     <param name="frame_id" value="laser_link"/>
   </node>
 
-  <!-- Laser Filters (Only hokuyo for know)-->
+  <!-- Laser Filters (Only hokuyo for now)-->
   <include file="${depth_laser_filter}/launch/hokuyo_filtered.launch" />
 
   <!-- Teleop -->
