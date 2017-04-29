@@ -52,6 +52,7 @@
   <exec_depend>victoria_description</exec_depend>
   <exec_depend>victoria_perception</exec_depend>
   <exec_depend>victoria_base</exec_depend>
+  <exec_depend>depth_laser_filter</exec_depend>
   <exec_depend>realsense_camera</exec_depend>
   <exec_depend>nmea_navsat_driver</exec_depend>
   <exec_depend>joint_state_publisher</exec_depend>
